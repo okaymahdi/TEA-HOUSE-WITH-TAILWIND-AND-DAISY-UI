@@ -13,19 +13,83 @@
       rel="stylesheet"
     />
 
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/130b96c600.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- shared styles -->
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
-        }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
 
-
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-
     <!-- header section -->
-    <header></header>
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+
+          <!-- bottom card -->
+          <!-- card content  -->
+          <div>
+            <!-- banner image -->
+            <img
+              src="images/banner.png"
+              class="max-w-sm"
+            />
+
+            <!-- rating badge -->
+            <div class="-mt-16 flex items-center gap-4 drop-shadow-lg p-5 w-60 bg-white">
+                <!-- card (rating) icon -->
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+
+              <!-- card text -->
+              <div>
+                <h3 class="tex-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+          <!-- card content -->
+        </div>
+      </div>
+    </header>
 
     <!-- main section -->
     <main></main>
