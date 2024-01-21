@@ -40,7 +40,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              'gradient-start': "#FF8938",
+              'gradient-end': "#F00",
             },
           },
         },
@@ -50,8 +51,8 @@
   <body>
     <!-- header section -->
     <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
@@ -62,14 +63,16 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Explore More
+              <img src="./images/up-right.svg" alt="">
+            </button>
           </div>
 
           <!-- bottom card -->
           <!-- card content  -->
           <div>
             <!-- banner image -->
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
 
             <!-- rating badge -->
             <div
@@ -209,7 +212,7 @@
 
       <!-- super client section -->
       <section
-        class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24"
+        class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24"
       >
         <div class="flex items-center lg:pr-28">
           <div class="space-y-5">
@@ -223,7 +226,9 @@
               injected humour, or randomised words which don't look even
               slightly believable.
             </p>
-            <button class="btn btn-primary">Show All</button>
+            <button class="btn btn-primary">Show All
+              <img src="./images/up-right.svg" alt="">
+            </button>
           </div>
         </div>
 
@@ -291,6 +296,61 @@
       </section>
     </main>
 
+    <!-- footer section -->
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+      <div class="flex justify-between items-center my-24">
+        <img src="./images/cup.png" alt="">
+        <p>
+          <span>Ready to get started?</span>
+          <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Get Started
+            <img src="./images/up-right.svg" alt="">
+          </button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <header class="footer-title">Newsletter</header>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-6 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button class="btn absolute top-0 ring-0 rounded-full text-white  bg-gradient-to-r from-gradient-start to-gradient-end">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
 
+      <aside class="mt-10 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
   </body>
 </html>
